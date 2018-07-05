@@ -3,7 +3,7 @@ DM assignment 2018
 
 O nome do projeto no Overleaf (e desse repositório aqui) é provisõrio. Quando acharmos o tema definitivo, a gente troca. 
 
-O [enunciado] http://eic.cefet-rj.br/moodle/pluginfile.php/19439/mod_resource/content/0/Project%20Assignment.pdf lista algumas coisas que ele espera ver no trabalho:
+O [enunciado](http://eic.cefet-rj.br/moodle/pluginfile.php/19439/mod_resource/content/0/Project%20Assignment.pdf) lista algumas coisas que ele espera ver no trabalho:
 * Data mining function
 * Strong exploratory analysis
 * Strong data preprocessing
@@ -23,7 +23,7 @@ no Jupyter, ele espera ver:
 * Exploratory analysis
 * Analysis of results
 
-Link para o [projeto no Overleaf] https://www.overleaf.com/read/xhqshhgxvkjw. Esse link é para acesso read-only. O link para edição segue depois em privado via Whatsapp (essa preocupação é porque *qualquer um* que tenha o link de edição pode alterar o arquivo) :confounded: 
+O link para o [projeto no Overleaf](https://www.overleaf.com/read/xhqshhgxvkjw) é para acesso read-only. O link para edição segue depois em privado via Whatsapp (essa preocupação é porque **qualquer um** que tenha o link de edição pode alterar o arquivo) :confounded: 
 
 Ano passado, os alunos já desenvolveram os seguintes temas:
 * Flight delay prediction
