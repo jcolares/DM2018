@@ -1,5 +1,5 @@
-#dm2018
-ml assignment 2018
+#DM2018
+DM assignment 2018
 
 Pessoal, criei um repositório no GitHub para podermos compartilhar objetos e informações do projeto de data mining. 
 Além desse repositório, continuamos com o grupo no WhatsApp e ainda um arquivo no Overleaf.
