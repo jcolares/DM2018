@@ -1,12 +1,9 @@
 #DM2018
 DM assignment 2018
 
-Pessoal, criei um repositório no GitHub para podermos compartilhar objetos e informações do projeto de data mining. 
-Além desse repositório, continuamos com o grupo no WhatsApp e ainda um arquivo no Overleaf.
+O nome do projeto no Overleaf (e desse repositório aqui) é provisõrio. Quando acharmos o tema definitivo, a gente troca. 
 
-O nome do projeto no Overleaf (e desse repositório) é provisõrio. Quando acharmos o tema definitivo, a gente troca. 
-
-O enunciado do trabalho lista algumas coisas que ele espera ver no trabalho:
+O [enunciado](http://eic.cefet-rj.br/moodle/pluginfile.php/19439/mod_resource/content/0/Project%20Assignment.pdf) lista algumas coisas que ele espera ver no trabalho:
 * Data mining function
 * Strong exploratory analysis
 * Strong data preprocessing
@@ -26,4 +23,17 @@ no Jupyter, ele espera ver:
 * Exploratory analysis
 * Analysis of results
 
+O link para o [projeto no Overleaf](https://www.overleaf.com/read/xhqshhgxvkjw) é para acesso read-only. O link para edição segue depois em privado via Whatsapp (essa preocupação é porque **qualquer um** que tenha o link de edição pode alterar o arquivo) :confounded: 
 
+Ano passado, os alunos já desenvolveram os seguintes temas:
+* Flight delay prediction
+* Sequence mining of flight data
+* Airport delay propagation
+* Frequent pattern mining
+
+Se decidirmos por explorar um desses temas, precisamos partir do trabalho já feito pelos outros alunos (tem que pedir ao Ogasawara). Eu, particularmente, prefiro fazer algo diferente. Daí o objetivo da primeira fase: explorar e analisar pra ver se encontramos algo interessante pra fazer.
+
+É isso aí, rapaziada. Mãos à obra!
+
+Abs!
+J
