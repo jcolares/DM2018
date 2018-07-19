@@ -41,3 +41,8 @@ J
 
 Ps. Achei a página do site da ANAC de onde ele tirou os [dados dos voos](http://www.anac.gov.br/assuntos/dados-e-estatisticas/historico-de-voos). 
 
+
+Link para o trabalho de predição de atrasos em voos do Fabien (Kaggle)
+https://www.kaggle.com/fabiendaniel/predicting-flight-delays-tutorial
+
+
