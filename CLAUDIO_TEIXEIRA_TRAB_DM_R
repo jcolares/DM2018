@@ -1,0 +1,46 @@
+# Carrega o dataset
+load("~/vra-wu.RData")
+
+## Retorna 8.683.195 observações
+
+# Considera apenas as partidas e as chegadas nos aeroportos domésticos
+df<-vra_wu[which(vra_wu$origin=="SBBE"|vra_wu$origin=="SBBR"|vra_wu$origin=="SBCF"|vra_wu$origin=="SBEG"|vra_wu$origin=="SBFZ"|vra_wu$origin=="SBGL"|vra_wu$origin=="SBGR"|vra_wu$origin=="SBKP"|vra_wu$origin=="SBPA"|vra_wu$origin=="SBRF"|vra_wu$origin=="SBSV"),]
+
+## Retorna 4.673.112 observações
+
+df1<-df[which(df$destiny=="SBBE"|df$destiny=="SBBR"|df$destiny=="SBCF"|df$destiny=="SBEG"|df$destiny=="SBFZ"|df$destiny=="SBGL"|df$destiny=="SBGR"|df$destiny=="SBKP"|df$destiny=="SBPA"|df$destiny=="SBRF"|df$destiny=="SBSV"),]
+
+## Retorna 2.462.980 observações
+
+# Remove as linhas cujos valores dos atrasos nas partidas são negativos
+df2<-df1[which(df1$departure_delay>=0),]
+
+## Retorna 1.936.780 observações
+
+# Remove as linhas cujos valores dos atrasos nas chegadas são negativos
+df3<-df2[which(df2$arrival_delay>=0),]
+
+## Retorna 1.908.884 observações
+
+# Remove as partidas que são maiores que as chegadas para um mesmo voo
+df4<-df3[as.POSIXct(df3$depart) >= as.POSIXct(df3$arrival),]
+
+## Retorna 464 observações
+
+df5<-df4[as.POSIXct(df4$depart_expect) >= as.POSIXct(df4$arrival_expect),]
+
+## Retorna 462 observações
+
+df6<-df5[as.POSIXct(df5$depart_expect_date) >= as.POSIXct(df5$arrival_expect_date),]
+
+## Retorna 462 observações
+
+# Mantém apenas as linhas com atrasos de acordo com as regras da ANAC
+df7<-df6[which(df6$departure_delay>=60),] ## atrasos maiores que 1h
+
+## Retorna 1 observação
+
+df8<-df7[which(df7$departure_delay<=1140),] ## atrasos menores que 24h
+
+## Retorna 1 observação
+
