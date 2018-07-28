@@ -22,7 +22,7 @@ df3<-df2[which(df2$arrival_delay>=0),]
 
 ## Retorna 1.908.884 observações
 
-# Remove as partidas que são maiores que as chegadas para um mesmo voo
+# Remove as partidas que são menores que as chegadas para um mesmo voo
 df4<-df3[as.POSIXct(df3$depart) >= as.POSIXct(df3$arrival),]
 
 ## Retorna 464 observações
