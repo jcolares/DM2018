@@ -8,7 +8,7 @@ get.seq = function(dataset, buffer_size=3, flag_var) {
   if(nrow(dataset) == 0) {stop("No data to process")}
   if(flag_var == "") {stop("No flag column informed")}  
 
-  # Local variables
+    # Local variables
   flag_var = which( colnames(dataset)==flag_var)
   i = 1
   j = 0
@@ -17,23 +17,25 @@ get.seq = function(dataset, buffer_size=3, flag_var) {
   buffer = dataset[0,]
   buffer_row = buffer[0,]
   result = buffer[0]
-
+  
   for (i in 1:nrow(dataset))
   #for (i in 1:300)
   {
     if (i > n) { buffer = buffer[-1, ]  }
-    buffer_row = cbind(dataset[i,], i)
+    buffer_row = bind_cols(dataset[i, ], as.data.frame(i[1 ]))
     buffer = rbind(buffer, buffer_row)
     
     if (!is.na(dataset[i, flag_var]) ) 
     {
-      newDataframe = cbind(buffer, TID)
+      newDataframe = bind_cols(buffer, as.data.frame(rep(TID,nrow(buffer))))
       TID = TID + 1
-      result = rbind(result, newDataframe)
+      result = bind_rows(result, newDataframe)
       newDataframe = newDataframe[0,]
     }
     i = i + 1
   }
+  colnames(result)[ncol(result)] = "SID"
+  result[colnames(result)[ncol(result)-1]] = NULL
   return(result)
 }
 
@@ -49,3 +51,4 @@ get.colors = function(selection) {
   return(result)  
   }
   
+
