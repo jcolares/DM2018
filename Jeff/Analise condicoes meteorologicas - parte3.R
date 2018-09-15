@@ -4,7 +4,7 @@
 # Quais são as combinações de condições meteorológicas que ocorrem com maior frequencia durante os atrasos?
 # Baixa pressão + temperatura?
 
-# PARTE 3 - Visualiza��o
+# PARTE 3 - Visualiza??o
 
 #library(dplyr)
 #library(lubridate)
@@ -14,15 +14,14 @@ library(arulesSequences)
 library(arulesViz)
 
 # Linux:
-# setwd("~/github/DM2018")
+setwd("~/github/DM2018")
 # Windows:
-setwd("C:/Users/Jefferson/Documents/GitHub/DM2018")
+# setwd("C:/Users/Jefferson/Documents/GitHub/DM2018")
 
 load("rules_cspade.RData")
 
-closedRulesSBRJ = ruleInduction(rulesSBRJ)
-
-inspect(head(closedRulesSBRJ, n = 5, by ="lift"))
+#closedRulesSBRJ = ruleInduction(rulesSBRJ)
+#inspect(head(closedRulesSBRJ, n = 5, by ="lift"))
 
 resultSBJV = as(rulesSBJV, "data.frame")
 resultSBGR = as(rulesSBGR, "data.frame")
